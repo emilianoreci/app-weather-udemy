@@ -4,9 +4,7 @@
   "description": "",
   "main": "./src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon --watch src src/app.js --watch ./templates -e js,hbs --watch ./public/css -e css,hbs,js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
