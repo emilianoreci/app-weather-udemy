@@ -32,7 +32,7 @@ app.set('views', viewsPath)
 hbs.registerPartials(partialPath)
 
 app.listen(port, () => {
-    console.log('server is up!!' + port)
+    console.log('server is up!!' + port) 
 })
 
 /* 
