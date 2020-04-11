@@ -10,7 +10,12 @@ weatherForm.addEventListener('submit', (e) => {
     if (searchInput.value.length === 0) alert('Debe ingresar una ciudad')
     else{
         pronostico.innerText='Loading ...'
-        const url = `http://localhost:3000/weather?address=${searchInput.value}`
+
+        //la url para test de forma local usaria esto:
+        //http://localhost:3000/weather?address=${searchInput.value}
+        //pero como va a estar deployado en heroku se debe quitar:
+        //http://localhost:3000
+        const url = `/weather?address=${searchInput.value}`
         fetch(url)
         .then(response => response.json()) 
         .then(data => {

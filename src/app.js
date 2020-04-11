@@ -6,6 +6,10 @@ const forecast = require('./utils/forescast')
 
 const app = express()
 
+//Acceso a variable entorno para heroku  o cuando corro en local, que lo haga en el puerto 3000
+const port = process.env.PORT || 3000
+
+
 //console.log(__dirname)
 //console.log(__filename)
 //console.log(path.join(__dirname, '../public'))
@@ -27,8 +31,8 @@ app.set('views', viewsPath)
 
 hbs.registerPartials(partialPath)
 
-app.listen(3000, () => {
-    console.log('server is up!!')
+app.listen(port, () => {
+    console.log('server is up!!' + port)
 })
 
 /* 

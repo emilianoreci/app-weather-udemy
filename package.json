@@ -5,7 +5,7 @@
   "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "node src/app.js",
     "dev": "nodemon --watch src src/app.js --watch ./templates -e js,hbs --watch ./public/css -e css,hbs,js"
   },
   "keywords": [],
