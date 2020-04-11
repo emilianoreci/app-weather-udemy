@@ -6,7 +6,7 @@ const errorPronostico = document.querySelector('#errorPronostico')
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     errorPronostico.innerText = ''
-
+//pu
     if (searchInput.value.length === 0) alert('Debe ingresar una ciudad')
     else{
         pronostico.innerText='Loading ...'
